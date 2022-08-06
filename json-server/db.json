@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "userid": "",
+      "nickname": "",
+      "password": ""
+    }
+  ],
+  "board": [
+    {
+      "author": "",
+      "postId": "",
+      "title": "",
+      "body": "",
+      "img": ""
+    }
+  ]
+}
