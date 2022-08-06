@@ -1,13 +1,27 @@
 {
   "users": [
     {
-      "userid": "",
-      "nickname": "",
-      "password": ""
+      "userId": "daeeun",
+      "nickname": "daeeun",
+      "password": "123",
+      "id": "pU6sHTz"
+    },
+    {
+      "userId": "daeeun1",
+      "nickname": "daeeun1",
+      "password": "1",
+      "id": "lPaTcTw"
+    },
+    {
+      "userId": "daeeun2",
+      "nickname": "daeeun2",
+      "password": "123",
+      "id": "-qGfDEK"
     }
   ],
   "board": [
     {
+      "id": "",
       "author": "",
       "postId": "",
       "title": "",
