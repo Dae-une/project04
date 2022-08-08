@@ -17,16 +17,40 @@
       "nickname": "daeeun2",
       "password": "123",
       "id": "-qGfDEK"
+    },
+    {
+      "userId": "daeeun2",
+      "nickname": "daeeun2",
+      "password": "123",
+      "id": "-qGfDEK"
+    },
+    {
+      "userId": "gwg03183",
+      "nickname": "kdy",
+      "password": "1234",
+      "id": "4dEvNvu"
     }
   ],
   "board": [
     {
-      "id": "",
-      "author": "",
-      "postId": "",
+      "title": "3131",
+      "body": "31311",
+      "id": 1
+    },
+    {
       "title": "",
       "body": "",
-      "img": ""
+      "id": 2
+    },
+    {
+      "title": "1231123133",
+      "body": "2131311313",
+      "id": 3
+    },
+    {
+      "title": "3131",
+      "body": "31311",
+      "id": 4
     }
   ]
 }

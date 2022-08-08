@@ -52,12 +52,12 @@ const SignUp = () => {
     if (!mismatchError) {
       if (
         userData.findIndex((user) => user.userId === userId) > -1 ||
-        userId.trim() == ""
+        userId.trim() === ""
       ) {
         return setSignUpError("아이디가 중복됬어요 !");
       } else if (
         userData.findIndex(
-          (user) => user.nickname === nickname || nickname.trim() == ""
+          (user) => user.nickname === nickname || nickname.trim() === ""
         ) > -1
       ) {
         return setSignUpError("닉네임이 중복됬어요 !");
