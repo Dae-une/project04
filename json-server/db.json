@@ -17,6 +17,24 @@
       "nickname": "daeeun2",
       "password": "123",
       "id": "-qGfDEK"
+    },
+    {
+      "userId": "daeeun3",
+      "nickname": "daeeun4",
+      "password": "123",
+      "id": "NwaYF-u"
+    },
+    {
+      "userId": "master1",
+      "nickname": "master",
+      "password": "123",
+      "id": "BdrKsRp"
+    },
+    {
+      "userId": "master2",
+      "nickname": "master2",
+      "password": "123",
+      "id": "9qjHqHc"
     }
   ],
   "board": [
