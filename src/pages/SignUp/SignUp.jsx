@@ -11,8 +11,13 @@ import {
 } from "./styles";
 import { Link } from "react-router-dom";
 import useInput from "../../hooks/useInput";
-import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  getUsersAysnc,
+  SignUpUsersAysnc,
+} from "../../redux/modules/signupSlice";
+
 const SignUp = () => {
   const [userId, onChangeUserId] = useInput("");
   const [nickname, onChangeNickname] = useInput("");
@@ -21,13 +26,15 @@ const SignUp = () => {
   const [mismatchError, setMismatchError] = useState("");
   const [SignUpError, setSignUpError] = useState("");
   const [signUpSuccess, setSignUpSuccess] = useState("");
-  const [userData, setUserData] = useState("");
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    axios
-      .get(process.env.REACT_APP_API_USERS)
-      .then((res) => setUserData(res.data));
+    dispatch(getUsersAysnc());
   }, []);
+
+  const userData = useSelector((state) => state.data);
+  console.log(userData);
 
   const onChangePassword = useCallback(
     (e) => {
@@ -51,25 +58,23 @@ const SignUp = () => {
     setSignUpSuccess(false);
     if (!mismatchError) {
       if (
-        userData.findIndex((user) => user.userId === userId) > -1 ||
+        userData?.findIndex((user) => user.userId === userId) > -1 ||
         userId.trim() == ""
       ) {
         return setSignUpError("아이디가 중복됬어요 !");
       } else if (
-        userData.findIndex(
+        userData?.findIndex(
           (user) => user.nickname === nickname || nickname.trim() == ""
         ) > -1
       ) {
         return setSignUpError("닉네임이 중복됬어요 !");
       } else {
-        axios
-          .post("http://localhost:3001/users", { userId, nickname, password })
-          .then(() => {
-            setSignUpSuccess(true);
-          });
+        dispatch(SignUpUsersAysnc({ userId, nickname, password }));
+        setSignUpSuccess(true);
       }
     }
   };
+
   return (
     <div>
       <Header>회원가입</Header>
