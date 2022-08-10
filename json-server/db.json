@@ -1,115 +1,53 @@
 {
   "users": [
     {
-      "userId": "daeeun",
-      "nickname": "daeeun",
-      "password": "123",
-      "id": "pU6sHTz"
-    },
-    {
-      "userId": "daeeun1",
-      "nickname": "daeeun1",
+      "userId": "test1",
+      "nickname": "1",
       "password": "1",
-      "id": "lPaTcTw"
+      "id": "ErfBnXL"
     },
     {
-      "userId": "daeeun2",
-      "nickname": "daeeun2",
-      "password": "123",
-      "id": "-qGfDEK"
-    },
-    {
-      "userId": "daeeun3",
-      "nickname": "daeeun4",
-      "password": "123",
-      "id": "NwaYF-u"
-    },
-    {
-      "userId": "master1",
-      "nickname": "master",
-      "password": "123",
-      "id": "BdrKsRp"
-    },
-    {
-      "userId": "master2",
-      "nickname": "master2",
-      "password": "123",
-      "id": "9qjHqHc"
-    },
-    {
-      "userId": "ddd",
-      "nickname": "ddd",
-      "password": "12345",
-      "id": "mRBSfFn"
+      "userId": "test2",
+      "nickname": "t",
+      "password": "2",
+      "id": "v_NoFrk"
     }
   ],
   "board": [
     {
-      "id": 1,
-      "author": "작성자",
-      "title": "제목제목제목제목이길면?",
-      "body": "내용입니다",
-      "postId": 1
+      "title": "test2",
+      "body": "test2",
+      "author": "test1",
+      "postId": "id22",
+      "id": 1
     },
     {
-      "title": "333",
-      "body": "3333",
-      "author": "gwg03183",
-      "postId": "",
+      "title": "test2",
+      "body": "1",
+      "author": "test1",
+      "postId": "id14",
       "id": 2
     },
     {
-
-      "title": "31313",
-      "body": "13133",
-      "author": "gwg03183",
+      "title": "123",
+      "body": "123",
+      "author": "test1",
+      "postId": "id28",
       "id": 3
     },
     {
-      "title": "12341",
-      "body": "12344",
-      "author": "gwg03183",
-      "postId": "id22",
+      "title": "123",
+      "body": "123123",
+      "author": "test1",
+      "postId": "id48",
       "id": 4
     },
     {
-      "title": "12341",
-      "body": "12344",
-      "author": "gwg03183",
-      "postId": "id22",
-      "id": 5
-    },
-    {
-      "title": "2121",
-      "body": "21211",
-      "author": "gwg03183",
-      "postId": "id20",
-      "id": 6
-    },
-    {
-      "title": "4544",
-      "body": "444",
-      "author": "gwg03183",
+      "title": "123",
+      "body": "123",
+      "author": "test1",
       "postId": "id16",
-      "id": 7
-      "title": "",
-      "body": "",
-      "id": 3
-    },
-    {
-      "title": "으아으아으아으아 ~",
-      "body": "죽음",
-      "id": 4
-    },
-    {
-      "title": "이번에는 작성자 들어가나요",
-      "body": "들어가나요 ...?",
       "id": 5
-    },
-    {
-      "title": "다시 다시 ",
-      "body": "작성자 들어가나요?",
-      "id": 6
     }
   ],
   "comments": [
@@ -120,100 +58,110 @@
       "postId": 1
     },
     {
-      "body": "두번쨰",
-      "author": "두번쨰",
-      "id": 2,
-      "postId": 2
+      "body": "qweqweqweqw",
+      "author": "test1",
+      "postId": "id22",
+      "id": 2
     },
     {
+      "body": "231231",
+      "author": "test1",
+      "postId": "id22",
       "id": 3
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "23123123",
+      "author": "test1",
+      "postId": "id22",
       "id": 4
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "123",
+      "author": "test1",
       "id": 5
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "234",
+      "author": "test1",
       "id": 6
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "1",
+      "author": "test1",
+      "postId": "id14",
       "id": 7
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "2",
+      "author": "test1",
+      "postId": "id28",
       "id": 8
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "3",
+      "author": "test1",
+      "postId": "id48",
       "id": 9
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "4",
+      "author": "test1",
+      "postId": "id16",
       "id": 10
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "123",
+      "author": "test1",
+      "postId": "id22",
       "id": 11
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "",
+      "author": "test1",
+      "postId": "id14",
       "id": 12
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "321",
+      "author": "test1",
+      "postId": "id14",
       "id": 13
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "222",
+      "author": "test1",
+      "postId": "id28",
       "id": 14
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "sss",
+      "author": "test1",
+      "postId": "id16",
       "id": 15
     },
     {
-      "author": "ddd",
-      "postId": "1",
+      "body": "3232",
+      "author": "test1",
+      "postId": "id22",
       "id": 16
     },
     {
-      "author": "ddd",
-      "postId": "5",
+      "body": "122121",
+      "author": "test1",
+      "postId": "id14",
       "id": 17
     },
     {
-      "author": "ddd",
-      "postId": "5",
+      "body": "dsds",
+      "author": "test1",
+      "postId": "id28",
       "id": 18
     },
     {
-      "body": "ddd",
-      "author": "ddd",
-      "postId": "1",
+      "body": "cxcx",
+      "author": "test1",
+      "postId": "id16",
       "id": 19
-    },
-    {
-      "body": "d",
-      "author": "ddd",
-      "postId": "1",
-      "id": 20
     }
   ]
 }

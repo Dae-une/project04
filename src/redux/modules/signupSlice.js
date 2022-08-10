@@ -20,7 +20,6 @@ export const getUsersAysnc = createAsyncThunk(
   "users/getUsers",
   async (thunkAPI) => {
     try {
-      console.log(process.env.REACT_APP_API_USERS)
       const res = await axios.get(process.env.REACT_APP_API_USERS);
       return res.data;
     } catch (error) {

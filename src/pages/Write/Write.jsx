@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Title, Body, Btngroup, Btn1, Btn2, Header } from "./styles";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { postWritesThunk } from "../../redux/modules/writeSlice";
 import nextId from "react-id-generator";
 
 const Write = () => {
   const htmlId = nextId();
-
 
   const navigate = useNavigate();
 
@@ -37,11 +36,11 @@ const Write = () => {
         title: write.title,
         body: write.body,
         author: cookies.garbageCookie,
-        postId:htmlId
+        postId: htmlId,
       })
     );
     alert("글 등록이 완료되었습니다.");
-    // return navigate("/");
+    navigate("/feed");
   };
 
   const onSubmit1 = (e) => {

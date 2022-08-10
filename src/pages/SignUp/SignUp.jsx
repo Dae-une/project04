@@ -34,7 +34,7 @@ const SignUp = () => {
   }, []);
 
   const userData = useSelector((state) => state.SignUp.data);
-  console.log(userData);
+  // console.log(userData);
 
   const onChangePassword = useCallback(
     (e) => {
