@@ -1,76 +1,77 @@
 import React, { useState } from "react";
-// import useInput from "../../hooks/useInput.js";
-import { Title, Body, Btngroup, Btn1, Btn2 } from "./styles";
-
-import axios from "axios";
+import { Title, Body, Btngroup, Btn1, Btn2, Header } from "./styles";
+import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { postWritesThunk } from "../../redux/modules/writeSlice";
+import nextId from "react-id-generator";
 
 const Write = () => {
+  const htmlId = nextId();
+
+
   const navigate = useNavigate();
-  // const isSuccess = useSelector((state) => state.write.isSuccess);
+
+  const [cookies] = useCookies(["garbageCookie"]);
+
+  const dispatch = useDispatch();
+
   const [write, setWrite] = useState({
     title: "",
     body: "",
+    author: "",
   });
-
-  // useEffect(() => {
-  //   if(!isSuccess) return;
-
-  // });
 
   const onChangeHandler = (event) => {
     const { name, value } = event.target;
     setWrite({
       ...write,
-      [name]: value,
+      [name]: value, //변수를위해서
     });
   };
 
   const onSubmit = (e) => {
-    // e.preventDefault();
-    console.log(1);
-    axios.post("http://localhost:3001/board", {
-      title: write.title,
-      body: write.body,
-    });
+    e.preventDefault();
+    dispatch(
+      postWritesThunk({
+        title: write.title,
+        body: write.body,
+        author: cookies.garbageCookie,
+        postId:htmlId
+      })
+    );
+    alert("글 등록이 완료되었습니다.");
+    // return navigate("/");
   };
 
   const onSubmit1 = (e) => {
     navigate("/feed");
   };
-
   return (
     <div>
+      <Header>♻️ 가비지</Header>
       <Title
         value={write.title}
         name="title"
         onChange={onChangeHandler}
         placeholder="제목을 입력해주세요."
+        maxLength={30}
       ></Title>
-
       <Body
         value={write.body}
         name="body"
         onChange={onChangeHandler}
         placeholder="내용을 입력해주세요."
+        maxLength={500}
       ></Body>
-
-      {/* <button type="button" onClick={null}>
-        이미지 업로드
-      </button> */}
-      {/* <input className="upload" type = "file"id="image" accept="img/*" onChange={onLoadFile}/>
-      <label htmlFor="image">파일 선택하기12131 </label> */}
-      <div>
-        <Btngroup>
-          <Btn1 type="button" onClick={onSubmit}>
-            확인
-          </Btn1>
-
-          <Btn2 type="button" onClick={onSubmit1}>
-            취소
-          </Btn2>
-        </Btngroup>
-      </div>
+      <Btngroup>
+        <Btn1 type="button" onClick={onSubmit}>
+          확인
+        </Btn1>
+        <Btn2 type="button" onClick={onSubmit1}>
+          취소
+        </Btn2>
+      </Btngroup>
     </div>
   );
 };

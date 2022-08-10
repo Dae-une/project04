@@ -33,7 +33,7 @@ const SignUp = () => {
     dispatch(getUsersAysnc());
   }, []);
 
-  const userData = useSelector((state) => state.data);
+  const userData = useSelector((state) => state.SignUp.data);
   console.log(userData);
 
   const onChangePassword = useCallback(
