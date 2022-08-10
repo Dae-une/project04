@@ -6,12 +6,11 @@ import Write from "./pages/Write/Write";
 function App() {
   return (
     <BrowserRouter>
-
       <Routes>
-        <Route path="/" element={<Write />} />
+        <Route path="/" element={<LogIn/>} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/write" element={<Write/>}/>
       </Routes>
-  
     </BrowserRouter>
   );
 }

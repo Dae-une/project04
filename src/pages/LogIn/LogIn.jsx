@@ -28,7 +28,7 @@ const LogIn = () => {
     dispatch(getUsersAysnc());
   }, []);
 
-  const userData = useSelector((state) => state.data);
+  const userData = useSelector((state) => state.SignUp.data);
 
   const onSubmit = useCallback(
     (e) => {
@@ -42,7 +42,7 @@ const LogIn = () => {
           path: "/",
           maxAge: 1000 * 60 * 60,
         });
-        navigate("/");
+        navigate("/write");
       } else {
         setLogInError(true);
       }
