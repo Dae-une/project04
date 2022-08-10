@@ -42,7 +42,7 @@ const LogIn = () => {
           path: "/",
           maxAge: 1000 * 60 * 60,
         });
-        navigate("/");
+        navigate("/feed");
       } else {
         setLogInError(true);
       }
