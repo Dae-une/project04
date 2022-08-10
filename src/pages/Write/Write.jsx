@@ -45,7 +45,7 @@ const Write = () => {
   };
 
   const onSubmit1 = (e) => {
-    navigate("/");
+    navigate("/feed");
   };
   return (
     <div>

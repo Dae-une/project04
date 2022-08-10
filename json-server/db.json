@@ -1,18 +1,55 @@
 {
   "users": [
     {
-      "userId": "gwg03183",
-      "nickname": "1234",
-      "password": "1234",
-      "id": 1
+      "userId": "daeeun",
+      "nickname": "daeeun",
+      "password": "123",
+      "id": "pU6sHTz"
+    },
+    {
+      "userId": "daeeun1",
+      "nickname": "daeeun1",
+      "password": "1",
+      "id": "lPaTcTw"
+    },
+    {
+      "userId": "daeeun2",
+      "nickname": "daeeun2",
+      "password": "123",
+      "id": "-qGfDEK"
+    },
+    {
+      "userId": "daeeun3",
+      "nickname": "daeeun4",
+      "password": "123",
+      "id": "NwaYF-u"
+    },
+    {
+      "userId": "master1",
+      "nickname": "master",
+      "password": "123",
+      "id": "BdrKsRp"
+    },
+    {
+      "userId": "master2",
+      "nickname": "master2",
+      "password": "123",
+      "id": "9qjHqHc"
+    },
+    {
+      "userId": "ddd",
+      "nickname": "ddd",
+      "password": "12345",
+      "id": "mRBSfFn"
     }
   ],
   "board": [
     {
-      "title": "123",
-      "body": "123",
-      "author": "gwg03183",
-      "id": 1
+      "id": 1,
+      "author": "작성자",
+      "title": "제목제목제목제목이길면?",
+      "body": "내용입니다",
+      "postId": 1
     },
     {
       "title": "333",
@@ -22,6 +59,7 @@
       "id": 2
     },
     {
+
       "title": "31313",
       "body": "13133",
       "author": "gwg03183",
@@ -54,6 +92,128 @@
       "author": "gwg03183",
       "postId": "id16",
       "id": 7
+      "title": "",
+      "body": "",
+      "id": 3
+    },
+    {
+      "title": "으아으아으아으아 ~",
+      "body": "죽음",
+      "id": 4
+    },
+    {
+      "title": "이번에는 작성자 들어가나요",
+      "body": "들어가나요 ...?",
+      "id": 5
+    },
+    {
+      "title": "다시 다시 ",
+      "body": "작성자 들어가나요?",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "body": "저녁 뭐 먹을까요?",
+      "author": "우하핫",
+      "id": 1,
+      "postId": 1
+    },
+    {
+      "body": "두번쨰",
+      "author": "두번쨰",
+      "id": 2,
+      "postId": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 4
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 5
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 6
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 7
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 8
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 9
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 10
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 11
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 12
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 13
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 14
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 15
+    },
+    {
+      "author": "ddd",
+      "postId": "1",
+      "id": 16
+    },
+    {
+      "author": "ddd",
+      "postId": "5",
+      "id": 17
+    },
+    {
+      "author": "ddd",
+      "postId": "5",
+      "id": 18
+    },
+    {
+      "body": "ddd",
+      "author": "ddd",
+      "postId": "1",
+      "id": 19
+    },
+    {
+      "body": "d",
+      "author": "ddd",
+      "postId": "1",
+      "id": 20
     }
   ]
 }
