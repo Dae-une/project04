@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Title, Body, Btngroup, Btn1, Btn2, Header } from "./styles";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { postWritesThunk } from "../../redux/modules/writeSlice";
 import nextId from "react-id-generator";
 
@@ -20,7 +20,7 @@ const Write = () => {
     body: "",
     author: "",
   });
-
+  console.log(cookies);
   const onChangeHandler = (event) => {
     const { name, value } = event.target;
     setWrite({
@@ -28,6 +28,12 @@ const Write = () => {
       [name]: value, //변수를위해서
     });
   };
+
+  useEffect(() => {
+    if (!cookies.garbageCookie) {
+      navigate("/");
+    }
+  }, []);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -46,6 +52,7 @@ const Write = () => {
   const onSubmit1 = (e) => {
     navigate("/feed");
   };
+
   return (
     <div>
       <Header>♻️ 가비지</Header>

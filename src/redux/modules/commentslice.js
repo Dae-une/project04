@@ -25,6 +25,22 @@ export const postCommentAysnc = createAsyncThunk(
   }
 );
 
+// export const editCommentAysnc = createAsyncThunk(
+//   "comment/editComment",
+//   async (data, thunkAPI) => {
+//     try {
+//       const res = await axios.get(process.env.REACT_APP_API_COMMENTS);
+//       const target = res.data.filter(
+//         (comment) => comment.postId == data.postId
+//       );
+//       const idx = target.findIndex((comment) => comment.postId == data.postId);
+//       return (target[idx].body = data.body);
+//     } catch (error) {
+//       return thunkAPI.rejectWithValue(error);
+//     }
+//   }
+// );
+
 export const CommentSlice = createSlice({
   name: "CommentReducer",
   initialState: {

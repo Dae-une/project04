@@ -4,14 +4,19 @@ import Reply from "./Reply";
 import { PageBox } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { pickPostAysnc } from "../../redux/modules/postSlice";
+import { useCookies } from "react-cookie";
 const DetailPages = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
+  const [cookies] = useCookies(["garbageCookie"]);
   useEffect(() => {
+    if (!cookies.garbageCookie) {
+      navigate("/");
+    }
     dispatch(pickPostAysnc());
   }, []);
+
   const pages = useSelector((state) => state.Post.data);
 
   const array = pages.filter((v) => v.postId == id);
@@ -31,7 +36,7 @@ const DetailPages = () => {
           <div>작성자:{array[0].author}</div>
           <div>내용: {array[0].body}</div>
         </article>
-        <Reply postId={id} />
+        <Reply postId={id} userNickname={array[0].author} />
       </PageBox>
     </>
   );

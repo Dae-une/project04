@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Header,
   Button,
@@ -10,11 +10,18 @@ import {
   Post,
   Title,
 } from "./styles.jsx";
+import { useCookies } from "react-cookie";
 import { useDispatch, useSelector } from "react-redux";
 import { getPostAysnc } from "../../redux/modules/postSlice.js";
 const Feed = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const cookies = useCookies(["garbageCookie"]);
+
   useEffect(() => {
+    if (!cookies[0].garbageCookie) {
+      navigate("/");
+    }
     dispatch(getPostAysnc());
   }, []);
 

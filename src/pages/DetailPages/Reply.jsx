@@ -6,22 +6,21 @@ import {
   getCommentAysnc,
 } from "../../redux/modules/commentslice";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 
-const Reply = ({ postId }) => {
+const Reply = ({ postId, userNickname }) => {
   const [cookies] = useCookies(["garbageCookie"]);
   const [text, setText] = useState("");
-  // const [commentList, setCommentList] = useState("");
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
 
+  const dispatch = useDispatch();
+
+  console.log(cookies.garbageCookie);
   // 댓글 Get
   useEffect(() => {
     dispatch(getCommentAysnc(postId));
   }, []);
 
   const commentList = useSelector((state) => state.Comment.data);
-
+  console.log("nick :", userNickname);
   // // 댓글 Post
   const onSubmit = (e) => {
     e.preventDefault();
@@ -34,6 +33,7 @@ const Reply = ({ postId }) => {
     );
     setText("");
   };
+
   // 댓글 입력
   const onChangeHandler = (event) => {
     const { value } = event.target;

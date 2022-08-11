@@ -29,28 +29,30 @@ const LogIn = () => {
   }, []);
 
   const userData = useSelector((state) => state.SignUp.data);
+  // console.log(userData);
 
   const onSubmit = useCallback(
     (e) => {
       e.preventDefault();
+      const cookieNickname = userData.find((data) => userId == data.userId);
+      console.log(cookieNickname);
       setLogInError(false);
       if (
         userData.findIndex((user) => user.userId === userId) > -1 &&
         userData.findIndex((user) => user.password === password) > -1
       ) {
-        setCookie("garbageCookie", userId, {
+        setCookie("garbageCookie", cookieNickname.nickname, {
           path: "/",
           maxAge: 1000 * 60 * 60,
         });
-
         navigate("/feed");
-
       } else {
         setLogInError(true);
       }
     },
     [userId, password]
   );
+
   return (
     <div>
       <Header>♻️ 가비지</Header>
