@@ -1,18 +1,103 @@
 {
   "users": [
     {
-      "userid": "",
-      "nickname": "",
-      "password": ""
+      "userId": "test1",
+      "nickname": "1",
+      "password": "1",
+      "id": "ErfBnXL"
+    },
+    {
+      "userId": "test2",
+      "nickname": "t",
+      "password": "2",
+      "id": "v_NoFrk"
+    },
+    {
+
+      "userId": "test3",
+      "nickname": "test3",
+      "password": "123",
+      "id": "WK-tJaA"
+
     }
   ],
   "board": [
     {
-      "author": "",
-      "postId": "",
-      "title": "",
-      "body": "",
-      "img": ""
+      "title": "제목입니다",
+      "body": "내용입니다. 저는 집에 가고싶어요",
+      "author": "test1",
+      "postId": "id22",
+      "id": 1
+    },
+    {
+      "title": "안녕하세요. 다들 피곤하시죠",
+      "body": "밤에 다들 고생이 많으십니다..\n구구절절.. \n어쩌고 저쩌고..\n으아앗..!",
+      "author": "1234",
+      "postId": "id298",
+      "id": 2
+    },
+    {
+      "title": "물복 vs 딱복",
+      "body": "저는 물복이 좋아요\n딱딱한 복숭아는 복숭아가 아니다\n딱딱한 복숭아로는 피클이나 해드세요\n딱복은 달지도 않고 너무 별로에요\n저는 물복이 좋아요\n물렁달콤 ~ 물복 짱",
+      "author": "1234",
+      "postId": "id1074",
+      "id": 3
+    },
+    {
+      "title": "안녕하세요. 저는 글을 길게 쓰고 있어요",
+      "body": "어디까지 나올까..?\n버튼은 헤더 옆으로 옮겨버려\n그렇다면 나는 어떻게할까\n과연 글이 어디가지 나올가요ㅣ....\n저는 하나도 모르겟네요....\n으아아....\n계{쏙 ..\n아페로도.. 계쏙\n500자까지..?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n으하핫",
+      "author": "1234",
+      "postId": "id1794",
+      "id": 4
+    },
+    {
+      "title": "안녕하세요..",
+      "body": "자고싶어요",
+      "author": "1234",
+      "postId": "id98",
+      "id": 5
+    },
+    {
+
+      "title": "1234qwdasdas",
+      "body": "123123123",
+      "postId": "id44",
+      "id": 6
+    },
+    {
+      "title": "cxzcaasd",
+      "body": "dsa",
+      "postId": "id68",
+      "id": 7
+    },
+    {
+      "title": "asdas",
+      "body": "qweqw",
+      "author": "1",
+      "postId": "id25",
+      "id": 8
+
+    }
+  ],
+  "comments": [
+    {
+      "body": "저녁 뭐 먹을까요?",
+      "author": "우하핫",
+      "id": 1,
+      "postId": 1
+    },
+    {
+      "body": "안녕하세요. 저도 그래요",
+      "author": "1234",
+      "postId": "id22",
+      "id": 2
+    },
+    {
+      "body": "저도 물복이 좋아요 ",
+      "author": "1234",
+      "postId": "id1074",
+      "id": 3
+
     }
   ]
 }
