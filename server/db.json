@@ -13,12 +13,10 @@
       "id": "v_NoFrk"
     },
     {
-
       "userId": "test3",
       "nickname": "test3",
       "password": "123",
       "id": "WK-tJaA"
-
     }
   ],
   "board": [
@@ -58,7 +56,6 @@
       "id": 5
     },
     {
-
       "title": "1234qwdasdas",
       "body": "123123123",
       "postId": "id44",
@@ -76,7 +73,6 @@
       "author": "1",
       "postId": "id25",
       "id": 8
-
     }
   ],
   "comments": [
@@ -97,7 +93,36 @@
       "author": "1234",
       "postId": "id1074",
       "id": 3
-
+    },
+    {
+      "body": "제발 이제 끝냇으면",
+      "author": "1",
+      "postId": "id22",
+      "id": 4
+    },
+    {
+      "body": "ㅇㄴㅁㅇㅁㄴㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇ",
+      "author": "1",
+      "postId": "id22",
+      "id": 5
+    },
+    {
+      "body": "ddssdsdsdsadas",
+      "author": "1",
+      "postId": "id22",
+      "id": 6
+    },
+    {
+      "body": "dsada",
+      "author": "1",
+      "postId": "id22",
+      "id": 7
+    },
+    {
+      "body": "dasdasdasas",
+      "author": "1",
+      "postId": "id22",
+      "id": 8
     }
   ]
 }

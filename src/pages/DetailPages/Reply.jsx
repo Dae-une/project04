@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
-import { CommentsBox,Input,Button,CommentsBoxWrap,AuthorBox,Formwrap} from "./styles";
+import {
+  CommentsBox,
+  Input,
+  Button,
+  CommentsBoxWrap,
+  AuthorBox,
+  Formwrap,
+} from "./styles";
 import {
   postCommentAysnc,
   getCommentAysnc,
@@ -44,16 +51,16 @@ const Reply = ({ postId, userNickname }) => {
   return (
     <div>
       {/* <CommentsBoxWrap> */}
-        {commentList
-          ? commentList?.map((textList) => {
-              return (
-                <CommentsBoxWrap key={textList.id}>
-                  <AuthorBox>{textList.author}</AuthorBox>
-                  <CommentsBox>{textList.body}</CommentsBox>
-                </CommentsBoxWrap>
-              );
-            })
-          : null}
+      {commentList
+        ? commentList?.map((textList) => {
+            return (
+              <CommentsBoxWrap key={textList.id}>
+                <AuthorBox> 닉네임 : {textList.author}</AuthorBox>
+                <CommentsBox>{textList.body}</CommentsBox>
+              </CommentsBoxWrap>
+            );
+          })
+        : null}
       {/* </CommentsBoxWrap> */}
       <Formwrap onSubmit={onSubmit}>
         <Input
@@ -62,8 +69,7 @@ const Reply = ({ postId, userNickname }) => {
           type="text"
           placeholder="댓글을 입력해주세요"
         ></Input>
-        <Button onClick={onSubmit}>입력완료</Button>
-        
+        <Button onClick={onSubmit}>작성</Button>
       </Formwrap>
     </div>
   );
