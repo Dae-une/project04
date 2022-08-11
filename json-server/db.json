@@ -11,57 +11,56 @@
       "nickname": "t",
       "password": "2",
       "id": "v_NoFrk"
+    },
+    {
+      "userId": "1234",
+      "nickname": "omi",
+      "password": "1234",
+      "id": "jeQLYJI"
     }
   ],
   "board": [
     {
-      "title": "test2",
-      "body": "test2",
+      "title": "제목입니다",
+      "body": "내용입니다. 저는 집에 가고싶어요",
       "author": "test1",
       "postId": "id22",
       "id": 1
     },
     {
-      "title": "test2",
-      "body": "1",
-      "author": "test1",
-      "postId": "id14",
+      "title": "안녕하세요. 다들 피곤하시죠",
+      "body": "밤에 다들 고생이 많으십니다..\n구구절절.. \n어쩌고 저쩌고..\n으아앗..!",
+      "author": "1234",
+      "postId": "id298",
       "id": 2
     },
     {
-      "title": "123",
-      "body": "123",
-      "author": "test1",
-      "postId": "id28",
+      "title": "물복 vs 딱복",
+      "body": "저는 물복이 좋아요\n딱딱한 복숭아는 복숭아가 아니다\n딱딱한 복숭아로는 피클이나 해드세요\n딱복은 달지도 않고 너무 별로에요\n저는 물복이 좋아요\n물렁달콤 ~ 물복 짱",
+      "author": "1234",
+      "postId": "id1074",
       "id": 3
     },
     {
-      "title": "123",
-      "body": "123123",
-      "author": "test1",
-      "postId": "id48",
+      "title": "안녕하세요. 저는 글을 길게 쓰고 있어요",
+      "body": "어디까지 나올까..?\n버튼은 헤더 옆으로 옮겨버려\n그렇다면 나는 어떻게할까\n과연 글이 어디가지 나올가요ㅣ....\n저는 하나도 모르겟네요....\n으아아....\n계{쏙 ..\n아페로도.. 계쏙\n500자까지..?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n으하핫",
+      "author": "1234",
+      "postId": "id1794",
       "id": 4
     },
     {
-      "title": "123",
-      "body": "123",
-      "author": "test1",
-      "postId": "id16",
+      "title": "안녕하세요..",
+      "body": "자고싶어요",
+      "author": "1234",
+      "postId": "id98",
       "id": 5
     },
     {
-      "title": "ㄹㄴㅇㅁㄹㅇㄴㅁㄻㅇㄴㄻㄴㅇㄹㅇㄴㅁㄻㄴ",
-      "body": "dkrkdskfamnsdlkfdsfdas\nfsdklfndsakl'fnasd'f\nasd\naㄹㄴㅇ마ㅓㅣㄻㄴ우라'ㅁㄴㅇㄹ\nㅇㄹㅇㄴ미ㅏ\nㅁㄴㅇ\nㄹㅇㄴ\nㄻㅇㄴ\nㅁㅇ\nㄹ\nㅇㅁㄴㄹ\nㅁㄴㅇㄹ\nㅁㅇㄹ\nㅁㄴㄹ\nㅇㄴㅁㄹㅇ\nㄴㅁㄹ\nㅇㅁㄴㄹ\nㅁㄴㅇㄹㄴㅇㅁㄹㅇㄴㅁ",
-      "author": "test1",
-      "postId": "id328",
+      "title": "바닐라라뗴",
+      "body": "우아앙",
+      "author": "1234",
+      "postId": "id66",
       "id": 6
-    },
-    {
-      "title": "이것은 테스트입니다",
-      "body": "테스트 내용을 입력해주세요\n1\n2\n3\n4\n5\n",
-      "author": "test1",
-      "postId": "id154",
-      "id": 7
     }
   ],
   "comments": [
@@ -72,158 +71,16 @@
       "postId": 1
     },
     {
-      "body": "qweqweqweqw",
-      "author": "test1",
+      "body": "안녕하세요. 저도 그래요",
+      "author": "1234",
       "postId": "id22",
       "id": 2
     },
     {
-      "body": "231231",
-      "author": "test1",
-      "postId": "id22",
+      "body": "저도 물복이 좋아요 ",
+      "author": "1234",
+      "postId": "id1074",
       "id": 3
-    },
-    {
-      "body": "23123123",
-      "author": "test1",
-      "postId": "id22",
-      "id": 4
-    },
-    {
-      "body": "123",
-      "author": "test1",
-      "id": 5
-    },
-    {
-      "body": "234",
-      "author": "test1",
-      "id": 6
-    },
-    {
-      "body": "1",
-      "author": "test1",
-      "postId": "id14",
-      "id": 7
-    },
-    {
-      "body": "2",
-      "author": "test1",
-      "postId": "id28",
-      "id": 8
-    },
-    {
-      "body": "3",
-      "author": "test1",
-      "postId": "id48",
-      "id": 9
-    },
-    {
-      "body": "4",
-      "author": "test1",
-      "postId": "id16",
-      "id": 10
-    },
-    {
-      "body": "123",
-      "author": "test1",
-      "postId": "id22",
-      "id": 11
-    },
-    {
-      "body": "",
-      "author": "test1",
-      "postId": "id14",
-      "id": 12
-    },
-    {
-      "body": "321",
-      "author": "test1",
-      "postId": "id14",
-      "id": 13
-    },
-    {
-      "body": "222",
-      "author": "test1",
-      "postId": "id28",
-      "id": 14
-    },
-    {
-      "body": "sss",
-      "author": "test1",
-      "postId": "id16",
-      "id": 15
-    },
-    {
-      "body": "3232",
-      "author": "test1",
-      "postId": "id22",
-      "id": 16
-    },
-    {
-      "body": "122121",
-      "author": "test1",
-      "postId": "id14",
-      "id": 17
-    },
-    {
-      "body": "dsds",
-      "author": "test1",
-      "postId": "id28",
-      "id": 18
-    },
-    {
-      "body": "cxcx",
-      "author": "test1",
-      "postId": "id16",
-      "id": 19
-    },
-    {
-      "body": "111",
-      "author": "test1",
-      "postId": "id16",
-      "id": 20
-    },
-    {
-      "body": "111",
-      "author": "test1",
-      "postId": "id22",
-      "id": 21
-    },
-    {
-      "body": "1111",
-      "author": "test1",
-      "postId": "id22",
-      "id": 22
-    },
-    {
-      "body": "21213",
-      "author": "test1",
-      "postId": "id22",
-      "id": 23
-    },
-    {
-      "body": "ㄹㅇㄴㄹㅇㅁㄴㄴㅇ",
-      "author": "test1",
-      "postId": "id328",
-      "id": 24
-    },
-    {
-      "body": "ㄹㄴㅇㅁㄻㄴㅇㄹㅇㄴㅁㅇㄴㅁ",
-      "author": "test1",
-      "postId": "id328",
-      "id": 25
-    },
-    {
-      "body": "212121",
-      "author": "test1",
-      "postId": "id328",
-      "id": 26
-    },
-    {
-      "body": "",
-      "author": "test1",
-      "postId": "id328",
-      "id": 27
     }
   ]
 }

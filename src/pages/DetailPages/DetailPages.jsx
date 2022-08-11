@@ -5,20 +5,20 @@ import { Header, Title,MainButton,Author,Body} from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { pickPostAysnc } from "../../redux/modules/postSlice";
 const DetailPages = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(pickPostAysnc());
-  }, []);
-  const pages = useSelector((state) => state.Post.data);
+    useEffect(() => {
+        dispatch(pickPostAysnc());
+    }, []);
+    const pages = useSelector((state) => state.Post.data);
 
-  const array = pages.filter((v) => v.postId == id);
+    const array = pages.filter((v) => v.postId == id);
 
-  const onSubmit1 = (e) => {
-    navigate("/feed");
-  };
+    const onSubmit1 = (e) => {
+        navigate("/feed");
+    };
 
   return (
     <>
@@ -35,6 +35,7 @@ const DetailPages = () => {
 
     </>
   );
+
 };
 
 export default DetailPages;
