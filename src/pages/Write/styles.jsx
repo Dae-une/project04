@@ -11,7 +11,6 @@ export const Title = styled.input`
   font-weight: 700;
   border-radius: 10px;
   padding: 15px;
-
 `;
 
 export const Body = styled.textarea`
@@ -25,6 +24,8 @@ export const Body = styled.textarea`
   font-weight: 500;
   border-radius: 10px;
   padding: 15px;
+  resize: none;
+  overflow: hidden;
 `;
 // upload{
 //     background-color: white;
@@ -41,7 +42,7 @@ export const Btngroup = styled.div`
 `;
 
 export const Btn1 = styled.button`
-border-radius: 5px;
+  border-radius: 5px;
   width: 70px;
   height: 45px;
   cursor: pointer;
@@ -55,7 +56,7 @@ border-radius: 5px;
 `;
 
 export const Btn2 = styled.button`
-border-radius: 5px;
+  border-radius: 5px;
   width: 70px;
   height: 45px;
   cursor: pointer;
@@ -67,7 +68,6 @@ border-radius: 5px;
     transform: scale(0.97);
   }
 `;
-
 
 export const Header = styled.div`
   text-align: center;
