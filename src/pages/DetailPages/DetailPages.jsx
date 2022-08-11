@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Reply from "./Reply";
-import { PageBox } from "./styles";
+import { Header, Title,MainButton,Author,Body} from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { pickPostAysnc } from "../../redux/modules/postSlice";
 import { useCookies } from "react-cookie";
 const DetailPages = () => {
+
   const { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -19,27 +20,25 @@ const DetailPages = () => {
 
   const pages = useSelector((state) => state.Post.data);
 
-  const array = pages.filter((v) => v.postId == id);
 
-  const onSubmit1 = (e) => {
-    navigate("/feed");
-  };
+    const array = pages.filter((v) => v.postId == id);
+
+    const onSubmit1 = (e) => {
+        navigate("/feed");
+    };
 
   return (
     <>
-      <PageBox>
-        <header>♻️가비지</header>
-        <button onClick={onSubmit1}>메인 화면으로</button>
-        <article>
-          <div>타이틀:{array[0].title}</div>
-          <div>아이디:{array[0].id}</div>
-          <div>작성자:{array[0].author}</div>
-          <div>내용: {array[0].body}</div>
-        </article>
-        <Reply postId={id} userNickname={array[0].author} />
-      </PageBox>
+        <Header>♻️가비지</Header> 
+        <MainButton onClick={onSubmit1}>메인 화면</MainButton>
+          <Title>{array[0].title}</Title>
+          {/* <Id>아이디:{array[0].id}</Id> */}
+          <Author>{array[0].author}</Author>
+          <Body>{array[0].body}</Body>
+        <Reply postId={id} />
     </>
   );
+
 };
 
 export default DetailPages;
