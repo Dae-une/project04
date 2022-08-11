@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
-import { CommentsBox } from "./styles";
+import { CommentsBox,Input,Button,CommentsBoxWrap,AuthorBox,Formwrap} from "./styles";
 import {
   postCommentAysnc,
   getCommentAysnc,
@@ -43,27 +43,28 @@ const Reply = ({ postId }) => {
   // const commentlist = comments.filter(comment => comment.postId === id)
   return (
     <div>
-      <CommentsBox>
+      {/* <CommentsBoxWrap> */}
         {commentList
           ? commentList?.map((textList) => {
               return (
-                <div key={textList.id}>
-                  <div>{textList.author}</div>
-                  <div>{textList.body}</div>
-                </div>
+                <CommentsBoxWrap key={textList.id}>
+                  <AuthorBox>{textList.author}</AuthorBox>
+                  <CommentsBox>{textList.body}</CommentsBox>
+                </CommentsBoxWrap>
               );
             })
           : null}
-      </CommentsBox>
-      <form onSubmit={onSubmit}>
-        <input
+      {/* </CommentsBoxWrap> */}
+      <Formwrap onSubmit={onSubmit}>
+        <Input
           value={text}
           onChange={onChangeHandler}
           type="text"
           placeholder="댓글을 입력해주세요"
-        />
-        <button onClick={onSubmit}>입력완료</button>
-      </form>
+        ></Input>
+        <Button onClick={onSubmit}>입력완료</Button>
+        
+      </Formwrap>
     </div>
   );
 };
