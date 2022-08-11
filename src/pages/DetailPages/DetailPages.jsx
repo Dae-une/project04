@@ -5,36 +5,36 @@ import { PageBox } from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { pickPostAysnc } from "../../redux/modules/postSlice";
 const DetailPages = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(pickPostAysnc());
-  }, []);
-  const pages = useSelector((state) => state.Post.data);
+    useEffect(() => {
+        dispatch(pickPostAysnc());
+    }, []);
+    const pages = useSelector((state) => state.Post.data);
 
-  const array = pages.filter((v) => v.postId == id);
+    const array = pages.filter((v) => v.postId == id);
 
-  const onSubmit1 = (e) => {
-    navigate("/feed");
-  };
+    const onSubmit1 = (e) => {
+        navigate("/feed");
+    };
 
-  return (
-    <>
-      <PageBox>
-        <header>♻️가비지</header>
-        <button onClick={onSubmit1}>메인 화면으로</button>
-        <article>
-          <div>타이틀:{array[0].title}</div>
-          <div>아이디:{array[0].id}</div>
-          <div>작성자:{array[0].author}</div>
-          <div>내용: {array[0].body}</div>
-        </article>
-        <Reply postId={id} />
-      </PageBox>
-    </>
-  );
+    return (
+        <>
+            <PageBox>
+                <header>♻️가비지</header>
+                <button onClick={onSubmit1}>메인 화면으로</button>
+                <article>
+                    <div>타이틀:{array[0].title}</div>
+                    <div>아이디:{array[0].id}</div>
+                    <div>작성자:{array[0].author}</div>
+                    <div>내용: {array[0].body}</div>
+                </article>
+                <Reply postId={id} />
+            </PageBox>
+        </>
+    );
 };
 
 export default DetailPages;
